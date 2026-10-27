@@ -1,4 +1,4 @@
-# 🎵 Logarithmic Soft Pause & Play (Flutter / Harmonoid Engine)
+# Logarithmic Soft Pause & Play (Flutter / Harmonoid Engine)
 
 A lightweight, sandboxed Flutter desktop audio application designed to evaluate and demonstrate smooth, pop-free **"Soft Play"** and **"Soft Pause"** audio transitions for music players like Harmonoid.
 
@@ -6,7 +6,7 @@ Built on top of [`media_kit`](https://pub.dev/packages/media_kit) (`libmpv`) and
 
 ---
 
-## ⚡ The Problem with Traditional Audio Fading
+##  The Problem with Traditional Audio Fading
 
 Most naive audio fading implementations suffer from two critical audio engineering flaws:
 
@@ -17,7 +17,7 @@ Most naive audio fading implementations suffer from two critical audio engineeri
 
 ---
 
-## 🛠️ The Solution
+##  The Solution
 
 - **Hardware VSync Synchronization (60Hz / 120Hz / 144Hz)**:
   Replaces `Timer.periodic` with Flutter's `AnimationController` (`SingleTickerProviderStateMixin`). Volume updates are delivered precisely on each display frame refresh, guaranteeing butter-smooth transitions.
@@ -30,7 +30,7 @@ Most naive audio fading implementations suffer from two critical audio engineeri
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Soft Play & Soft Pause**: 500ms S-curved volume fades with zero zipper noise.
 - **Interruption-Safe Logic**: Rapidly clicking play/pause dynamically reverses direction without erratic jumps.
@@ -40,7 +40,7 @@ Most naive audio fading implementations suffer from two critical audio engineeri
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.13+)
@@ -62,7 +62,7 @@ flutter run -d windows
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 The repository includes pure unit tests verifying the cubic curve mathematics and interruption handling:
 
